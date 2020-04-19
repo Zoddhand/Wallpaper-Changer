@@ -1,4 +1,4 @@
-#	Number of Monitors. (Leave this blank for auto detection. or change from 0 to override)
+#	Number of Monitors. (Leave this Zero for auto detection. or change from 0 to override)
 1
 #
 #	right/MAIN monitors resolution.
