@@ -46,7 +46,7 @@ void CreateFolder(const char* path)
 	if (_mkdir(path) == 0)
 	{
 		cout << "Directory " << path << " was successfully created\n";
-		//system("dir \\testtmp");
+		system("dir \\path");
 	}
 	else
 		cout << "Problem Creating Directory " << path << ". It may already exist\n";
@@ -62,15 +62,11 @@ int numMonitors = 0;
 bool a = false;
 int main()
 {
-
-
-	CreateFolder(dir[3].directory.c_str());
 	loadSettings("config.txt");
-
+	CreateFolder(dir[3].directory.c_str());
 
 	std::wstring_convert< std::codecvt<wchar_t, char, std::mbstate_t> > conv;
 	std::wstring wstr = conv.from_bytes(dir[3].directory);
-	std::wcout << wstr << L'\n';
 
 	display dis[3];
 	std::chrono::seconds interval(settings[8]);
@@ -145,10 +141,9 @@ int main()
 
 bool changeWallpaper(const wchar_t* wall1)
 {
-	wcout << wall1;
 	const wchar_t* filenm = wall1; //ADDRESS of first image
 	bool isWallSet = SystemParametersInfoW(SPI_SETDESKWALLPAPER, 1, (void*)filenm, SPIF_UPDATEINIFILE);
-	std::cout << "Changed\n";
+	std::cout << " Successfully Changed\n";
 	return false;
 }
 
@@ -235,12 +230,7 @@ string Clist(const char* f)
 	//generate a random number between 0 and count of total lines
 	int random_number = rand() % total_lines;
 
-
-
 	//fetch the line where line index (starting from 0) matches with the random number
-
-	cout << lines[random_number];
-
 	return lines[random_number];
 }
 
