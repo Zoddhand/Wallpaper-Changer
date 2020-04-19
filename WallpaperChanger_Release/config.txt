@@ -1,15 +1,15 @@
-#	Number of Monitors. (Leave this Zero for auto detection. or change from 0 to override)
+#	Number of Monitors. (Leave this blank for auto detection. or change from 0 to override)
 1
 #
-#	right/MAIN monitors resolution.
+#	Monitor 1's resolution.
 800
 600
 #
-#	left/center Monitors resolution.
+#	Monitor 2's resolution.
 1920
 1080
 #
-#	even further left monitors resolution.
+#	Monitor 3's resolution.
 1920
 1080
 #
