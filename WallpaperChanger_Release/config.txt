@@ -1,0 +1,41 @@
+#Number of Monitors. (Leave this blank for auto detection. or change from 0 to override)
+0
+
+#right/MAIN monitors resolution.
+1920
+1080
+
+#left/center Monitors resolution.
+1920
+1080
+
+#even further left monitors resolution.
+1920
+1080
+
+#The Tallest Monitors Y resolution. if your best monitors resolution is 1920/1080 you would enter 1080. 
+#but if its a 4k monitor 3840 x 2160 you would enter 2160.
+1080
+#Time between Wallpaper Changes in seconds. Example: 120 is 2 minutes.
+60
+
+#Enable Debug Console Output. 0 for off 1 for on.
+0
+
+#Monitor Offset Y. You may need to offset your monitor based on its position in display settings. Default 0;
+0
+
+#Monitor Offset Y. This is for your 3rd monitor.
+0
+
+#Destination Folder for right monitors Wallpapers dont forget the leading '!' . ### Example: !cd C:/Wallpapers && dir /b *.jpg *.png > filenames.txt
+!C:\Example\Picture\Wallpapers
+
+#Destination Folder for center monitors Wallpapers dont forget the leading '@' .
+@C:\Example\Picture\Wallpapers
+
+#Destination Folder for left monitors Wallpapers dont forget the leading '$' .
+$C:\Example\Picture\Wallpapers
+
+#Destination Folder Working Directory. Needs to be full path. dont forget the leading '%' .
+%C:\Users\Public\WallpaperChanger\
